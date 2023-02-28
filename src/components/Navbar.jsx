@@ -11,10 +11,10 @@ const Navbar = () => {
         <img
           src={hamburgerIcon}
           alt="Menu Toggle Icon"
-          className="md:hidden"
+          className="lg:hidden"
           onClick={() => setToggleNavbar((prev) => !prev)}
         />
-        <div className="text-white text-xl flex items-center gap-8">
+        <div className="hidden text-white text-xl lg:flex items-center gap-8">
           <p className="">About</p>
           <p className="">Services</p>
           <p className="">Projects</p>
@@ -25,8 +25,8 @@ const Navbar = () => {
       </div>
       <div
         className={`${
-          !toggleNavbar && "h-0 py-0 opacity-50"
-        } transition-all md:hidden overflow-hidden duration-500 text-center grid grid-rows-4 py-8 mt-8 text-lg font-barlow bg-white mx-6 text-neutral-dark-grayish-blue`}
+          !toggleNavbar && "h-0 pt-0 pb-0 py-0 opacity-50"
+        } transition-all md:hidden py-8 overflow-hidden duration-500 text-center grid grid-rows-4 mt-8 text-lg font-barlow bg-white mx-6 text-neutral-dark-grayish-blue`}
       >
         <p className="">About</p>
         <p className="">Services</p>
